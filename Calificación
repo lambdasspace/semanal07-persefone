@@ -1,0 +1,43 @@
+Ejercicio 1: (3.5 puntos)
+Ejecución de la expresión original (1.5 puntos)
+
+Ejecución (0.5/0.5): Correcto.
+Explicación (0.25/1): no se detallan las razones técnicas del error.
+Modificación con el combinador de punto fijo Y (2/2 puntos)
+Implementación (1/1): La implementación del combinador Y es correcta.
+Explicación (0.5/1): no se muestra el resultado final de la evaluación..
+
+Ejercicio 2: (3 puntos)
+Evaluación de la expresión (define c #f) ... (c 10) (1.5 puntos)
+
+Ejecución (0.5/0.5): Correcto. 
+Explicación (0.75/1): Se podría haber profundizado más en los detalles de let/cc
+Explicación de la continuación usando notación λ↑ (1.5/1.5 puntos)
+Explicación (1/1.5): Faltan detalles importantes sobre el flujo de control 
+> (+ 1 (+ 2 (+ 3 (+ 4 5))))
+> (+ 1 (+ 2 (+ 3 9)))
+> (+ 1 (+ 2 12))
+> (+ 1 14)
+> 15
+
+> (+ 1 (+ 2 (+ 3 (+ 10 5))))
+> (+ 1 (+ 2 (+ 3 15)))
+> (+ 1 (+ 2 18))
+> (+ 1 20)
+> 21
+
+Ejercicio 3: (3.5 puntos)
+Definición de ocurrenciasElementos (1.5 puntos)
+Implementación (0.5/0.75): Aunque la implementación funciona, se ve limitada por el uso de listas 
+Explicación (0.25/0.75): La explicación es superficial. 
+Registros de activación de la versión original (0.75/0.75 puntos)
+Representación (0.5/0.75): no se entra en detalles suficientes sobre el comportamiento exacto de las llamadas recursivas ni sobre cómo se activan o desapilan los registros en cada paso de la recursión.
+Claridad (0.25/0.75): No hay analisis
+Optimización con recursión de cola (0.75 puntos)
+Implementación (0.25/0.5):El uso del acumulador no está completamente optimizado
+Explicación (0/0.25): No hay ninguna explicación sobre los beneficios de la recursión de cola. 
+Registros de activación de la versión optimizada (0.5/0.5 puntos)
+Representación (0.25/0.5): No se diferencian mucho
+Claridad (0.25/0.5): Se podrían haber hecho comparaciones entre la profundidad de las pilas de llamadas en ambas versiones
+
+Calif: 6.25/10
